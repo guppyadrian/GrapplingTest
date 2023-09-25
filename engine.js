@@ -8,13 +8,14 @@
   - drawRect()
 */
 
+const IMAGE_DIRECTORY = "./assets/textures/";
+
+
 
 const ctx = myCanvas.getContext("2d");
 const Keys = {w: false, a: false, s: false, d: false};
-const Cam = {x: 0, y: 0, z: 0};
+const Cam = {x: 0, y: 0, z: 1};
 const _ImagesLibrary = {};
-
-const IMAGE_DIRECTORY = "./assets/textures/";
 
 /**
  * Loads an image in the "./assets/textures" directory.

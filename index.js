@@ -1,5 +1,7 @@
 const GAME_FRAMERATE = 60;
 
+
+
 const MainCharacter = new Character();
 
 /**
