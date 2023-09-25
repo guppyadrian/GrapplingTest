@@ -1,5 +1,5 @@
 /**
- * Class representing a sprite.
+ * Represents a sprite.
  */
 class Sprite {
   /**

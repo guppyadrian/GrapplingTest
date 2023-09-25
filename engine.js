@@ -4,12 +4,31 @@
   - Keys
   - Cam
   - toScreen()
+  - getImage()
+  - drawRect()
 */
 
 
 const ctx = myCanvas.getContext("2d");
 const Keys = {w: false, a: false, s: false, d: false};
 const Cam = {x: 0, y: 0, z: 0};
+const _ImagesLibrary = {};
+
+const IMAGE_DIRECTORY = "./assets/textures/";
+
+/**
+ * Loads an image in the "./assets/textures" directory.
+ * @param {String} imageName - The name of the image file.
+ * @returns {HTMLImageElement} Returns the image.
+ */
+function getImage(imageName) {
+  const img = new Image();
+  const imageSource = IMAGE_DIRECTORY + imageName;
+
+  img.src = imageSource;
+  _ImagesLibrary[imageName] = imageSource;
+  return img;
+}
 
 /**
  * Converts a game position to a screen position.

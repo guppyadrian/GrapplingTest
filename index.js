@@ -1,3 +1,5 @@
+const GAME_FRAMERATE = 60;
+
 const MainCharacter = new Character();
 
 /**
@@ -9,4 +11,4 @@ function Tick() {
   MainCharacter.draw();
 }
 
-setInterval(Tick, 16.67);
+setInterval(Tick, 1000 / GAME_FRAMERATE);

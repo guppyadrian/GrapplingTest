@@ -1,4 +1,11 @@
+/**
+ * Represents a moveable character with speed.
+ */
 class Character extends Sprite {
+  /**
+   * Creates a character.
+   * @param {Position} pos - The initial position of the character.
+   */
   constructor(pos = {x: 0, y: 0}) {
     super(pos);
 
